@@ -4,7 +4,7 @@ author: "Kazi Reyazul Hasan (1905082), Mubasshira Musarrat (1905088), Arko Sikde
 date: "2025-01-07"
 ---
 
-# RL-GPT: A Smarter Way to Teach AIs Through Planning and Practice
+# RL-GPT
 
 When it comes to building intelligent systems, there’s often a tension between **explicit, rule-based coding** and **reinforcement learning** (RL). Rule-based coding is fast for simple tasks but lacks adaptability. RL excels at adapting to complex tasks, but it can be slow or data-hungry. **RL-GPT** aims to combine both worlds by merging **Large Language Models (LLMs)** with **Reinforcement Learning** for an AI that is both strategic and adaptable. This blog will introduce you to RL-GPT, explain how it works, and highlight why it’s a significant step forward.
 
