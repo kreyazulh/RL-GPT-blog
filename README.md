@@ -348,21 +348,21 @@ While **RL-GPT** demonstrates remarkable progress in decomposing and solving com
 
 ### Strengths
 1. **Flexible Task Decomposition**  
-   RL-GPT uses GPT-style language models to break down tasks into smaller subtasks. This modularity helps streamline learning by focusing RL only where it's truly needed.
+   RL-GPT uses GPT-style language models to break down tasks into smaller subtasks. This modularity helps streamline learning by focusing RL only where it's actually needed.
 2. **Sample Efficiency**  
-   By offloading repetitive or deterministic actions to code (Code-as-Policy), RL-GPT reduces the burden on reinforcement learning, often lowering the total number of environment interactions needed.
+   By taking off repetitive or deterministic actions to code (Code-as-Policy), RL-GPT reduces the burden on reinforcement learning, lowering the total number of environment interactions needed.
 3. **Iterative Refinement**  
-   The dual-loop feedback mechanism—where the Slow Agent refines its plan based on feedback from the Critic Agent—facilitates rapid incremental improvements, especially on long-horizon goals.
+   The dual-loop feedback mechanism where the Slow Agent refines its plan based on feedback from the Critic Agent produces rapid incremental improvements, especially on long-horizon goals.
 4. **Generalizable Architecture**  
    Although showcased in Minecraft, RL-GPT can be adapted to robotics, logistics, and other domains where tasks can be partially scripted and partially learned.
 
 ### Limitations
 1. **Reliance on Accurate Task Decomposition**  
-   If the Slow Agent’s breakdown of subtasks is flawed or too coarse, the Fast Agent may struggle to learn effective policies. Mis-specified subtasks can hinder overall progress.
+   If the Slow Agent’s breakdown of subtasks is flawed or too coarse, the Fast Agent may struggle to learn effective policies.
 2. **Complexity of Real-World Deployment**  
    While RL-GPT proves effective in simulated environments, real-world scenarios (e.g., robotics) introduce noisy sensors, hardware constraints, and safety concerns that may complicate the planning-execution loop.
 3. **Long Fine-Tuning Cycles**  
-   Iterative refinement can be time-consuming for very large or intricate tasks, especially when environment resets or multi-stage training are required.
+   Iterative refinement can be time-consuming for very large or complex tasks, especially when environment resets or multi-stage training are required.
 4. **Limited Autonomy in Novel Tasks**  
    RL-GPT still requires some **human priors** or high-level guidance to jumpstart subtasks. Completely autonomous decomposition and reward design for unfamiliar domains remain active research areas.
 
